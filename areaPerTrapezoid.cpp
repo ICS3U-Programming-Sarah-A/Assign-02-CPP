@@ -33,7 +33,7 @@ int main() {
   // display area to user
   std::cout << std::endl;
   std::cout << "\033[1;34mArea = " << std::fixed;
-  cout << fixed << setprecision(2) << area <<" cm^2. \n";
+  std::cout << std::setprecision(2) << area <<" cm^2. \n";
 
   std::cout << std::endl;
 
@@ -44,12 +44,12 @@ int main() {
   std::cout << "\033[1;35mEnter side length D of the trapezoid (cm): ";
   std::cin >> side_d;
 
-  // caulcate perimeter of the trapezoid
+  // calculate perimeter of the trapezoid
   perimeter = base1 + base2 + side_c + side_d;
 
   // display results to user
   std::cout << std::endl;;
   std::cout << "\033[1;36mPerimeter = " << std::fixed;
-  cout << fixed << setprecision(2) << perimeter <<" cm.\n";
+  std::cout << std::setprecision(2) << perimeter <<" cm.\n";
 }
 
